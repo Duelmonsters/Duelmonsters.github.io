@@ -1,0 +1,69 @@
+body{
+    background-image: url(/assets/images/fundo.png);
+}
+
+.botoes{
+    position: absolute;
+    top: 210px;
+    left: 30px
+}
+
+.botoes img{
+    width: 500px;
+    border-radius: 30px;
+}
+
+#sobre{
+    position: relative;
+    top: 350px;
+    left: -500px;
+}
+
+.bunner{
+    z-index: 1;
+    position: absolute;
+    right: 200px;
+    top: 200px;
+}
+
+.eusei{
+width: 1000px;
+display: block;
+margin: 0px auto;
+top: auto;
+}
+
+.titulo{
+    position: absolute;
+    left: 50px;
+    top: 25px;
+}
+
+.bernas{
+    position: relative;
+    top: 15px;
+    left: 140px;
+}
+
+.descbernas{
+    position: relative;
+    top: 150px;
+    left: -280px;
+}
+
+.teste{
+    width: 1000px;
+}
+
+.texto{
+    position: relative;
+    width: 800px;
+    left: -815px;
+}
+
+.kraken{
+    position: relative;
+    width: 800px;
+    top: -596px;
+    left: 1040px;
+}
