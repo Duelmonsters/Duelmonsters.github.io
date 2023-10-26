@@ -8,8 +8,7 @@ o jogo tem 5 biossistemas diferentes e terá um sistema de "caça a monstro"
 - Página web para demonstração do projeto
 - Um jojo realizado no scratch para demonstração e protótipo de um jogo real
 
-### Link do site
+ Link do site
 
-
-### Link do jogo feito no Scratch
+ Link do jogo feito no Scratch
 ```https://scratch.mit.edu/projects/909302159```
