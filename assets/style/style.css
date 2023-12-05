@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #19052c;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.bolhas {
+    position: absolute;
+    display: flex;
+    z-index: 0;
+}
+
+.bolhas span {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 7px #ffffff44,
+    0 0 50px #fcfcfc,
+    0 0 100px #ffffff;
+    z-index: 0;
+    animation: animar calc(30s / var(--i)) 5s linear infinite;
+}
+
+@keyframes animar {
+    0%{
+        transform: translateY(-10vh) translateX(0) scale(0);
+    }
+    100%{
+        transform: translateY(100vh) translateX(-50vw) scale(1);
+    }
+}
+
+.bolhas span:nth-of-type(even) {
+    background: #2dc3ff;
+    box-shadow: 0 0 0 7px #2dc3ff44,
+    0 0 50px #2dc3ff,
+    0 0 100px #2dc3ff;
+}
+
+.centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(25, 5, 44, 0.9);
+    width: 225px;
+    height: 350px;
+    text-align: center;
+    border: 3px solid #4a085e;
+    box-shadow: 0 0 10px 4px #4a085e;
+    border-radius: 3%;
+}
+
+.centro button {
+    margin-top: 15px;
+    width: 205px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 17px 40px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 20px;
+}
+
+.centro a {
+    text-decoration: none;
+    color: black;
+}
+
+#jogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(25, 5, 44, 0.9);
+    width: 490px;
+    height: 440px;
+    text-align: center;
+    border: 3px solid #4a085e;
+    box-shadow: 0 0 10px 4px #4a085e;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#jogo iframe {
+    margin: 0 auto;
+    border: 3px solid #4a085e;
+    border-radius: 3% 3% 0% 0%;
+}
+
+#jogo button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 3px solid black;
+    border-radius: 17px 40px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 15px;
+    padding: 5px;
+}
+
+#jogo a {
+    text-decoration: none;
+    color: black;
+}
+
+#configuracoes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(25, 5, 44, 0.9);
+    width: 225px;
+    height: 350px;
+    text-align: center;
+    border: 3px solid #4a085e;
+    box-shadow: 0 0 10px 4px #4a085e;
+    border-radius: 3%;
+}
+
+#configuracoes button {
+    margin-top: 15px;
+    width: 205px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 17px 40px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 20px;
+}
+
+#configuracoes a {
+    text-decoration: none;
+    color: black;
+}
+
+#logar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(25, 5, 44, 0.9);
+    width: 490px;
+    height: 340px;
+    text-align: center;
+    border: 3px solid #4a085e;
+    box-shadow: 0 0 10px 4px #4a085e;
+    border-radius: 3%;
+}
+
+
+.textos_logar {
+    margin-top: 10px;
+    font-size: 15px;
+    height: 30px;
+    padding: 3px;
+    padding-left: 4px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.textos_logar::placeholder {
+    text-decoration: underline;
+    padding-left: 4px;
+}
+
+#logar button {
+    margin-top: 15px;
+    width: 205px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 17px 40px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 20px;
+}
+
+#inputs a {
+    color: gray;
+}
+
+.botao_logar {
+    text-decoration: none;
+    color: black;
+}
+
+#logar input {
+    width: 410px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#textos_logar2 {
+    margin-bottom: 0px;
+}
+
+.rec_senha {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(25, 5, 44, 0.9);
+    width: 490px;
+    height: 250px;
+    text-align: center;
+    border: 3px solid #4a085e;
+    box-shadow: 0 0 10px 4px #4a085e;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.rec_senha input {
+    margin-top: 10px;
+    font-size: 15px;
+    width: 410px;
+    height: 50px;
+    padding: 3px;
+    padding-left: 4px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.rec_senha {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+}
+
+.rec_senha button {
+    margin-top: 15px;
+    width: 205px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 17px 40px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 20px;
+}
+
+.rec_senha a {
+    text-decoration: none;
+    color: black;
+}
+
+.cadastrar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(25, 5, 44, 0.9);
+    width: 490px;
+    height: 400px;
+    text-align: center;
+    border: 3px solid #4a085e;
+    box-shadow: 0 0 10px 4px #4a085e;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cadastrar input {
+    margin-top: 10px;
+    font-size: 15px;
+    width: 410px;
+    height: 50px;
+    padding: 3px;
+    padding-left: 4px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.cadastrar button {
+    margin-top: 15px;
+    width: 205px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 17px 40px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 20px;
+}
+
+.cadastrar a {
+    text-decoration: none;
+    color: black;
+}
+
+.pos_cadastro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(25, 5, 44, 0.9);
+    width: 490px;
+    height: 150px;
+    text-align: center;
+    border: 3px solid #4a085e;
+    box-shadow: 0 0 10px 4px #4a085e;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+} 
+
+.pos_cadastro p {
+    margin-top: 15px;
+    color: white;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 25px;
+
+}
+
+.pos_cadastro button {
+    margin-top: 15px;
+    width: 205px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 17px 40px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 20px;
+}
+
+.pos_cadastro a {
+    text-decoration: none;
+    color: black;
+}
+
+.sobre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(25, 5, 44, 0.9);
+    width: 490px;
+    height: 340px;
+    text-align: center;
+    border: 3px solid #4a085e;
+    box-shadow: 0 0 10px 4px #4a085e;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sobre h1 {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+}
+
+.sobre p {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+}
+.sobre button {
+    margin-top: 15px;
+    width: 205px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 17px 40px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 20px;
+}
+
+.sobre a {
+    text-decoration: none;
+    color: black;
+}
