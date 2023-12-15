@@ -6,7 +6,15 @@ o jogo tem 5 biossistemas diferentes e terá um sistema de "caça a monstro"
 
 ## O projeto
 - Página web para demonstração do projeto
-- Um jojo realizado no scratch para demonstração e protótipo de um jogo real
+- Um jogo realizado no scratch para demonstração e protótipo de um jogo real
+  
+###Nomes do integrantes:
+- Bernardo Aleixo Correa
+- Gabriel Yan Vexani
+- Guilherme Correia
+- Ian Jacques
+- Pedro Henrique Meira Chaves
+
 
  Link do site
 
